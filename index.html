@@ -1,467 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <!-- feviicon  -->
-  <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon" />
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-
-  <link rel="stylesheet" href="style.css" />
-
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <!-- typing animation js file cdn  -->
-  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Utkarsh Srivastav | Portfolio</title>
+    
+    <!-- Libraries -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <!-- HEADER  DESIGN -->
-  <header class="header">
-    <a href="#" class="logo">Utkarsh's Portfolio</a>
-    <nav class="navbar">
-      <a href="#home" class="active">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#testimonial">Awards</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <div class="bx bx-moon" id="darkMood-icon"></div>
-    <div class="bx bx-menu" id="menu-icon"></div>
-  </header>
-  <!-- END OF HEADER -->
-
-  <!-- HOME section design -->
-  <section class="home" id="home">
-    <div class="home-content">
-      <h3>Hello, I am</h3>
-      <span class="homeSpan">Utkarsh Srivastav</span>
-      <p>I am a <span class="typing" id="typed-output"></span></p>
-
-      <div class="social-media">
-        <a href="https://github.com/UtkarshSrivastav09" target="_blank"><i class="bx bxl-github"></i></a>
-        <a href="https://www.linkedin.com/in/utkarsh-srivastav-b433bb33a/" target="_blank"><i
-            class="bx bxl-linkedin"></i></a>
-        <a href="https://www.youtube.com/@shubhsrivastav1124" target="_blank"><i class="bx bxl-youtube"></i></a>
-      </div>
-
-      <a href="Utkarsh Resume.pdf" class="btn" download>Download Resume</a>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <span class="loader-text">Loading...</span>
+        </div>
     </div>
+    
+    <div id="canvas-container"></div>
 
-    <!-- Professin Design  -->
-    <div class="profession-container">
-      <div class="overlay"></div>
-    </div>
-    <!-- End of Profession -->
-  </section>
-  <!-- END OF HOME SECTION -->
+    <!-- HEADER -->
+    <header class="header">
+        <a href="#" class="logo">Port<span>folio</span></a>
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Projects</a>
+            <a href="#testimonial">Certificates</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-  <!-- About Section -->
-  <section class="about" id="about">
-    <div class="about-img">
-      <img src="mainImage.jpeg" alt="" />
-    </div>
+    <!-- HOME SECTION -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Utkarsh Srivastav</h1>
+            <p>I am a <span id="typed-output" style="color: var(--main-color); font-weight: 600;"></span></p>
 
-    <div class="about-content">
-      <h2 class="heading">About <span>Me</span></h2>
-      <h1>
-        Hi,<img src="https://raw.githubusercontent.com/nguyenanhung/nguyenanhung/master/assets/Hand%20Wave.gif"
-          alt="helloImage" width="50" />
-        I'm Utkarsh Srivastav
-      </h1>
-      <br />
-      <h3>🎓 Pursuing Bachelor Of Computer Application</h3>
-      <h3>📚 Currently learning Full Stack Web Development</h3>
-      <br />
-      <p>I am a passionate software developer with strong knowledge of Java, Object-Oriented Programming, and Data
-        Structures & Algorithms. I have worked on multiple projects and applications using React.js, Node.js,
-        Express.js, MongoDB atlas, Java Springboot and MySQL etc.
-
-      <p>My areas of interest include backend development, problem-solving, and system design. I am continuously
-        enhancing my coding skills and exploring modern frameworks to build scalable and efficient applications.</p>
-
-      <p>I believe in writing clean, optimized code, applying real-world business logic, and constantly learning to grow
-        as a full-stack or backend engineer.</p>
-      <!-- <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="Programming" width="300" />  -->
-    </div>
-  </section>
-
-  <!-- End of about section -->
-
-  <!-- Service Section -->
-  <section class="skills" id="skills">
-    <h2 class="heading">My <span>Skills</span></h2>
-    <div class="skills-container">
-      <div class="skills-box">
-        <!-- communication LOGO -->
-        <img src="https://clipart-library.com/img1/1081973.png" alt="html5" width="40" height="40" />
-        <!-- critical thinking logo -->
-        <img src="https://vectorified.com/images/communication-icon-png-1.png" alt="css3" width="40" height="40" />
-        <!-- time manage LOGO -->
-        <img
-          src="https://static.vecteezy.com/system/resources/previews/015/214/642/original/time-management-3d-illustration-icon-png.png"
-          alt="javascript" width="40" height="40" />
-        <!-- box paragragh -->
-        <h3>Inbuilt!</h3>
-        <p>
-          🧠 Critical Thinking: Strategically analyze and solve complex
-          problems. 🗣️ Communication: Clearly convey ideas and foster
-          collaboration to meet goals. ⏰ Time Management: Efficiently manage
-          multiple tasks and deadlines to ensure productivity.
-        </p>
-        <a href="#testimonial" class="btn">Show More</a>
-      </div>
-
-      <div class="skills-box">
-        <!-- HTML LOGO -->
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
-          alt="html5" width="40" height="40" />
-        <!-- css logo -->
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
-          alt="css3" width="40" height="40" />
-        <!-- JS LOGO -->
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
-          alt="javascript" width="40" height="40" />
-        <!-- box paragragh -->
-        <h3>HTML, CSS, JavaScript</h3>
-        <p>
-          🌐 Develop responsive and interactive web pages, utilizing a strong
-          foundation in HTML, CSS, and JavaScript. 🎨 Craft seamless and
-          engaging user experiences, ensuring each element contributes to a
-          fluid and enjoyable interaction.
-        </p>
-        <a href="#portfolio" class="btn">Show More</a>
-      </div>
-
-      <div class="skills-box">
-        <!-- botstarp logo -->
-        <img
-          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg"
-          alt="bootstrap" width="40" height="40" />
-        <!-- react logo -->
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
-          alt="react" width="40" height="40" />
-        <h3>🌐 Bootstrap & ReactJS</h3>
-        <p>
-          Implement dynamic web applications using Bootstrap for responsive
-          design and ReactJS for efficient and scalable front-end development.
-        </p>
-        <a href="#portfolio" class="btn">Show More</a>
-      </div>
-
-      <div class="skills-box">
-        <!-- npm logo -->
-        <img src="https://en.vetores.org/wp-content/uploads/npm.png" alt="npm" width="40" height="40" />
-        <h3>📦 Packages</h3>
-        <p>
-          Proficient in using npm, webpack to manage and enhance project
-          functionality.Tried in various installation and project running ways
-          inside terminal.
-        </p>
-        <a href="#portfolio" class="btn">Show More</a>
-      </div>
-
-      <div class="skills-box">
-        <img src="https://cdn.freebiesupply.com/logos/large/2x/git-icon-logo-png-transparent.png" alt="git" width="40"
-          height="40" />
-        <h3>🔄 Version Control Systems</h3>
-        <p>
-          Skilled in using Git for distributed version control, GitHub for
-          collaboration and code sharing, and GitLab for project management
-          and continuous integration.
-        </p>
-        <a href="#portfolio" class="btn">Show More</a>
-      </div>
-    </div>
-  </section>
-  <!-- End of Service Section -->
-
-  <!-- Portfolio Section Design -->
-  <section class="portfolio" id="portfolio">
-    <h2 class="heading">Latest <span>Project</span></h2>
-
-    <div class="portfolio-container">
-
-      <div class="portfolio-box">
-        <img src="P2P.jpg" alt="" />
-        <div class="portfolio-layer">
-          <h4>P2P File Sharing On Local Network</h4>
-          <p>
-            Developed a lightweight P2P file-sharing application that enables fast, direct file transfers between
-            devices on the same local network. Designed with simple device discovery and an easy interface for seamless
-            offline sharing.
-          </p>
-          <a href="/" target="_blank"><i
-              class="bx bx-link-external"></i></a>
-        </div>
-      </div>
-
-      <div class="portfolio-box">
-        <img src="2FA.png" alt="" />
-        <div class="portfolio-layer">
-          <h4>2FA System</h4>
-          <p>
-            Built a secure Two-Factor Authentication system that adds an extra verification layer using OTP codes. Improves user login safety with quick code delivery, easy validation, and a simple, user-friendly interface.
-          </p>
-          <a href="/" target="_blank"><i
-              class="bx bx-link-external"></i></a>
-        </div>
-      </div>
-
-      <div class="portfolio-box">
-        <img src="tour.GIF" alt="" />
-        <div class="portfolio-layer">
-          <h4>Tour & Tourism Website</h4>
-          <p>
-            Designed and developed a responsive web application that helps
-            users explore destinations, view package details, and make
-            bookings seamlessly. The website features destination galleries,
-            package filtering.
-          </p>
-          <a href="https://utkarshsrivastav09.github.io/Tour_And_Tourism_Website/" target="_blank"><i
-              class="bx bx-link-external"></i></a>
-        </div>
-      </div>
-
-      <div class="portfolio-box">
-        <img src="preschool.GIF" alt="" />
-        <div class="portfolio-layer">
-          <h4>Preschool Website</h4>
-          <p>
-            ✅ Developed a responsive and child-friendly website for a
-            preschool, featuring sections for programs, admissions,
-            activities, and contact. The site provides easy navigation for
-            parents, a welcoming visual design.
-          </p>
-          <a href="https://utkarshsrivastav09.github.io/Preschool-Website/ " target="_blank"><i
-              class="bx bx-link-external"></i></a>
-        </div>
-      </div>
-
-      <div class="portfolio-box">
-        <img src="Food.gif" alt="cal.img" />
-        <div class="portfolio-layer">
-          <h4>Online Food Website</h4>
-          <p>
-            Designed and developed a responsive food ordering website that
-            allows users to explore menus, add items to a cart, and place
-            orders seamlessly.
-          </p>
-          <a href="https://utkarshsrivastav09.github.io/Cafe-Online-Food-Website/" target="_blank"><i
-              class="bx bx-link-external"></i></a>
-        </div>
-      </div>
-
-      <div class="portfolio-box">
-        <img src="Hospital.gif" alt="" />
-        <div class="portfolio-layer">
-          <h4>Full Stack Hospital Website</h4>
-          <p>
-            Developed a responsive hospital website that enables users to view
-            departments, book appointments, and access hospital services
-            online.
-          </p>
-          <a href="https://utkarshsrivastav09.github.io/Full-Stack_Hospital_Website/" target="_blank"><i
-              class="bx bx-link-external"></i></a>
-        </div>
-      </div>
-
-      <div class="portfolio-box">
-        <img src="Contact.gif" alt="" />
-        <div class="portfolio-layer">
-          <h4>Responsive Contact Us Form</h4>
-          <p>
-            Know the current weather at your place, just search it at be
-            cautious. Build with Javascript api calling and demo role html css
-            is shown.
-          </p>
-          <a href="https://utkarshsrivastav09.github.io/Responsive_Contact-Us-Form/" target="_blank"><i
-              class="bx bx-link-external"></i></a>
-        </div>
-      </div>
-
-      <div class="portfolio-box">
-        <img src="weather.gif" alt="" />
-        <div class="portfolio-layer">
-          <h4>Weather Forecast App</h4>
-          <p>
-            A responsive and user-friendly weather forecasting web application
-            that provides real-time weather updates for any location using API
-            integration.
-          </p>
-          <a href="https://utkarshsrivastav09.github.io/Weather-Forecast-Website/" target="_blank"><i
-              class="bx bx-link-external"></i></a>
-        </div>
-      </div>
-
-      <div class="portfolio-box">
-        <img src="Phone.jpg" alt="" />
-        <div class="portfolio-layer">
-          <h4>Phone Number Location Tracker</h4>
-          <p>
-            Identifies the region and carrier of a phone number using lookup APIs and basic metadata. Offers quick results through a simple interface for easy number verification and location insights.
-          </p>
-          <a href="/" target="_blank"><i
-              class="bx bx-link-external"></i></a>
-        </div>
-      </div>
-
-      <!-- <div class="portfolio-box">
-          <img src="img/projects/selftalk.gif" alt="" />
-          <div class="portfolio-layer">
-            <h4>SelfTalk chatbot!</h4>
-            <p>
-              This project will provide the clear vision of u by your self instructions given to it , talk to it daily, make your self better!
-              Comming soon!!!!!!!
-            </p>
-            <a href=""><i class="bx bx-link-external"></i></a>
-          </div>
-        </div> -->
-    </div>
-  </section>
-
-  <!-- Testomial Design -->
-  <section class="testimonial" id="testimonial">
-    <div class="testimonial-container" id="testimonial">
-      <h2 class="heading">Valuable <span>Certifications</span></h2>
-      <div class="testimonial-wrapper">
-        <div class="testimonial-box myswiper">
-          <div class="testimonial-content swiper-wrapper">
-
-            <div class="testimonial-slide swiper-slide">
-              <img src="Oracle_Asso.jpg" alt="" />
-              <h3>📜 Oracle Certified Foundation Associate</h3>
-              <p>
-                Completed the Oracle Certified Foundation Associate certification, showcasing proficiency in SQL fundamentals, database concepts, cloud basics, and Oracle technologies essential for application development and data management.
-              </p>
+            <div class="home-buttons">
+                <a href="https://github.com/UtkarshSrivastav09" target="_blank" class="btn-outline">
+                    <i class='bx bxl-github'></i> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/utkarsh-srivastav-b433bb33a/" target="_blank" class="btn-outline">
+                    <i class='bx bxl-linkedin'></i> LinkedIn
+                </a>
+                <a href="mailto:utkarshsrivastav.offical@gmail.com" class="btn-outline">
+                    <i class='bx bxs-envelope'></i> Email
+                </a>
             </div>
 
-            <div class="testimonial-slide swiper-slide">
-              <img src="TCS iON - Young.jpg" alt="" />
-              <h3> TCS iON Career Edge - Young Professional</h3>
-              <p>
-                This certificate validates a strong foundation in essential IT concepts, problem-solving, and industry-standard practices. It demonstrates the ability to understand core technologies, apply analytical thinking, and meet professional competency standards recognized by TCS for entry-level roles.
-              </p>
-            </div>
-
-            <div class="testimonial-slide swiper-slide">
-              <img src="Walmart.PNG" alt="" />
-              <h3> Walmart Global Tech Advanced Engineering Job Simulation</h3>
-              <p>
-                This certificate reflects hands-on experience completing Walmart Global Tech’s Advanced Engineering Job Simulation. It demonstrates practical skills in system design, debugging, code optimization, and real-world problem-solving aligned with Walmart’s engineering standards. It highlights technical proficiency, analytical thinking, and the ability to build scalable solutions in a fast-paced, industry-level environment.
-              </p>
-            </div>
-
-            <div class="testimonial-slide swiper-slide">
-              <img src="JP Morgan.PNG" alt="" />
-              <h3> JP Morgan Chase & Co. Job Simulation</h3>
-              <p>
-                Completed the JPMorgan Chase & Co. Job Simulation, gaining hands-on experience with real-world software engineering tasks. Worked on analyzing financial data, debugging code, improving system efficiency, and implementing feature enhancements. Demonstrated problem-solving, attention to detail, and ability to work with industry-level tools and workflows.
-              </p>
-            </div>
-
-            <div class="testimonial-slide swiper-slide">
-              <img src="aws job.PNG" alt="" />
-              <h3>AWS - Solutions Architecture Job Simulation</h3>
-              <p>
-                Mastered the essentials of web design with Open Weaver’s Basic
-                HTML & CSS Certification. This certification showcases the
-                ability to create structured and visually appealing web pages,
-                emphasizing the foundational skills necessary for any web
-                development journey.
-              </p>
-            </div>
-
-            <div class="testimonial-slide swiper-slide">
-              <img src="Hindtech Certificate.jpeg" alt="" />
-              <h3>📜 Hindtech</h3>
-              <p>
-                Mastered the essentials of web design with Open Weaver’s Basic
-                HTML & CSS Certification. This certification showcases the
-                ability to create structured and visually appealing web pages,
-                emphasizing the foundational skills necessary for any web
-                development journey.
-              </p>
-            </div>
-            
-
-            <div class="testimonial-slide swiper-slide">
-              <img src="Tata Certificate.jfif" alt="" />
-              <h3>📜 Cybersecurity Analyst Job Simulation (Tata & Forage)</h3>
-              <p>
-                Successfully completed the Cybersecurity Analyst Job Simulation by Tata through Forage, gaining hands-on
-                experience in Identity and Access Management (IAM) fundamentals, IAM strategy assessment, crafting
-                custom IAM solutions, and platform integration.
-              </p>
-            </div>
-
-
-            
-          </div>
+            <a href="Utkarsh Resume.pdf" class="btn primary-btn" download style="margin-top: 3rem;">Download Resume</a>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- End of testimonial -->
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+        <h2 class="heading">About <span>Me</span></h2>
+        <div class="about-container">
+            <div class="about-main">
+                <div class="about-img-box">
+                    <img src="Utkarsh Image.png" alt="Utkarsh Srivastav" class="main-photo" />
+                    <div class="img-glow"></div>
+                    <div class="about-btns">
+                        <a href="mailto:utkarshsrivastav.offical@gmail.com" class="btn">Connect Now</a>
+                        <a href="#portfolio" class="btn-outline">View Projects</a>
+                    </div>
+                </div>
+                
+                <div class="about-content">
+                    <h3 class="about-subtitle"><span id="typed-about"></span></h3>
+                    <p class="about-text">
+                        I am an enthusiastic <span class="highlight">Full Stack Developer</span> with a solid foundation in the <span class="highlight">Java Ecosystem</span>. I enjoy building functional and user-friendly web applications by combining modern frontend designs with robust backend logic. As a quick learner with a passion for problem-solving, I am eager to apply my academic knowledge to real-world projects and contribute to innovative software solutions.
+                    </p>
+                </div>
+            </div>
 
-  <!-- Contact Section Design -->
-  <section class="contact" id="contact">
-    <h2 class="heading">Contact <span>Me!</span></h2>
-    <form action="https://api.web3forms.com/submit" method="POST">
-      <div class="input-box">
-        <input type="hidden" name="access_key" value="1887007f-8cac-4bb8-b834-c1d04f2f25bb" />
-        <input type="text" name="first_name" placeholder="Full Name" />
-        <input type="email" name="email" placeholder="Email" />
-        <input type="number" name="number" placeholder="Mobile Number" />
-        <input type="text" name="Message" placeholder="Email Subject" />
-      </div>
-      <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-      <input type="submit" value="Send Message" class="btn" />
-    </form>
-  </section>
-  <!-- End of Contact -->
+            <div class="about-grid">
+                <div class="info-card glass-card">
+                    <i class='bx bxs-graduation'></i>
+                    <h4>Education</h4>
+                    <p>Bachelor Of Computer Application (BCA)</p>
+                </div>
+                <div class="info-card glass-card">
+                    <i class='bx bxs-book-content'></i>
+                    <h4>Learning</h4>
+                    <p>Full Stack Web Development</p>
+                </div>
+                <div class="info-card glass-card">
+                    <i class='bx bxs-award'></i>
+                    <h4>Credentials</h4>
+                    <p>28+ Industry Certs</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Footer Section Design-->
-  <footer class="footer">
-    <div class="footer-text">
-      <p>Create By <span>Utkarsh Srivastav</span> 2025 &copy; all rights reserved!</p>
-    </div>
-    <div class="footer-topIcon">
-      <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
-    </div>
-  </footer>
-  <!-- End of Section Design -->
+    <!-- SKILLS SECTION -->
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+        <div class="skills-container">
+            <!-- Card 1: Java & Backend -->
+            <div class="skill-card glass-card">
+                <div class="skill-icons">
+                    <i class='bx bxl-java'></i>
+                    <i class='bx bxs-cog'></i>
+                </div>
+                <h3>Java Backend</h3>
+                <p>Expertise in <span class="highlight">Java</span> and <span class="highlight">Springboot</span>. Building robust, scalable backend architectures and high-performance server logic.</p>
+                <a href="#portfolio" class="btn skill-btn">Show More</a>
+            </div>
 
-  <!-- Custom Javascript -->
-  <script src="script.js"></script>
+            <!-- Card 2: Frontend Core -->
+            <div class="skill-card glass-card">
+                <div class="skill-icons">
+                    <i class='bx bxl-html5'></i>
+                    <i class='bx bxl-css3'></i>
+                    <i class='bx bxl-javascript'></i>
+                </div>
+                <h3>Frontend Core</h3>
+                <p>Developing responsive web pages with <span class="highlight">HTML5</span>, <span class="highlight">CSS3</span>, and <span class="highlight">JavaScript</span>. Focus on clean UI and seamless UX.</p>
+                <a href="#portfolio" class="btn skill-btn">Show More</a>
+            </div>
 
-  <!-- Swipper  -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <script>
-    var swiper = new Swiper(".myswiper", {
-      slidesPerView: 1,
-      spaceBetween: 50,
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
-  <!-- Scroll Reveal -->
-  <script src="script.js"></script>
+            <!-- Card 3: React & Node.js -->
+            <div class="skill-card glass-card">
+                <div class="skill-icons">
+                    <i class='bx bxl-react'></i>
+                    <i class='bx bxl-nodejs'></i>
+                </div>
+                <h3>React & Node</h3>
+                <p>Implementing dynamic applications using <span class="highlight">ReactJS</span> for frontend and <span class="highlight">Node/Express</span> for modern web services.</p>
+                <a href="#portfolio" class="btn skill-btn">Show More</a>
+            </div>
+
+            <!-- Card 4: Databases -->
+            <div class="skill-card glass-card">
+                <div class="skill-icons">
+                    <i class='bx bxs-data'></i>
+                    <i class='bx bxl-mongodb'></i>
+                </div>
+                <h3>Databases</h3>
+                <p>Proficient in <span class="highlight">MySQL</span> and <span class="highlight">MongoDB Atlas</span>. Designing efficient schemas and managing real-time data flow.</p>
+                <a href="#portfolio" class="btn skill-btn">Show More</a>
+            </div>
+
+            <!-- Card 5: Tools & DevOps -->
+            <div class="skill-card glass-card">
+                <div class="skill-icons">
+                    <i class='bx bxl-git'></i>
+                    <i class='bx bxl-visual-studio'></i>
+                </div>
+                <h3>Dev Tools</h3>
+                <p>Using <span class="highlight">Git</span>, <span class="highlight">Terminal</span>, and <span class="highlight">VS Code</span>. Experienced in managing project packages with <span class="highlight">npm</span> and <span class="highlight">webpack</span>.</p>
+                <a href="#portfolio" class="btn skill-btn">Show More</a>
+            </div>
+
+            <!-- Card 6: Inbuilt (Soft Skills) -->
+            <div class="skill-card glass-card">
+                <div class="skill-icons">
+                    <i class='bx bx-brain'></i>
+                    <i class='bx bx-time'></i>
+                </div>
+                <h3>Professional</h3>
+                <p>Strong focus on <span class="highlight">Problem Solving</span>, <span class="highlight">Time Management</span>, and <span class="highlight">Collaborative Communication</span> to meet goals.</p>
+                <a href="#portfolio" class="btn skill-btn">Show More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box glass-card">
+                <img src="doc.gif" alt="Project 1" />
+                <div class="portfolio-layer">
+                    <h4>DocX AI</h4>
+                    <p>Real-time Patient Database.</p>
+                    <a href="https://utkarshsrivastav09.github.io/DocX-AI_The-Realtime-Patient-Database/" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box glass-card">
+                <img src="Two.gif" alt="Project 2" />
+                <div class="portfolio-layer">
+                    <h4>Secure 2FA</h4>
+                    <p>Authentication System.</p>
+                    <a href="#" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box glass-card">
+                <img src="tour.GIF" alt="Project 3" />
+                <div class="portfolio-layer">
+                    <h4>Tourism</h4>
+                    <p>Responsive Web App.</p>
+                    <a href="https://utkarshsrivastav09.github.io/Tour_And_Tourism_Website/" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIAL SECTION -->
+    <section class="testimonial" id="testimonial">
+        <h2 class="heading">My <span>Certifications</span></h2>
+        <div class="testimonial-wrapper swiper myswiper glass-card">
+            <div class="testimonial-content swiper-wrapper">
+                <div class="testimonial-slide swiper-slide">
+                    <img src="Oracle_Asso.jpg" alt="Oracle" />
+                    <h3>Oracle</h3>
+                    <p>Certified Associate.</p>
+                </div>
+                <div class="testimonial-slide swiper-slide">
+                    <img src="Walmart.PNG" alt="Walmart" />
+                    <h3>Walmart</h3>
+                    <p>Global Tech Certification.</p>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-card glass-card">
+            <input type="hidden" name="access_key" value="699d7580-0a82-4113-911e-76e336214156" />
+            <div class="input-box">
+                <input type="text" name="name" placeholder="Full Name" required />
+                <input type="email" name="email" placeholder="Email Address" required />
+            </div>
+            <div class="input-box">
+                <input type="number" name="phone" placeholder="Mobile Number" />
+                <input type="text" name="subject" placeholder="Email Subject" />
+            </div>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message" class="btn" />
+
+            <div class="contact-info-row" style="display: flex; justify-content: center; gap: 3rem; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--glass-border); flex-wrap: wrap; font-size: 1.4rem; opacity: 0.8;">
+                <span><i class='bx bxs-envelope'></i> utkarshsrivastav.offical@gmail.com</span>
+                <span><i class='bx bxs-phone'></i> +91 9555091386</span>
+                <span><i class='bx bxs-map'></i> Uttar Pradesh, India</span>
+            </div>
+        </form>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by Utkarsh | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
