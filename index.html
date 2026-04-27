@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Utkarsh Srivastav | Portfolio</title>
-    
+
     <!-- Libraries -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -15,12 +16,17 @@
     <!-- Preloader -->
     <div id="preloader">
         <div class="loader-content">
-            <div class="loader-ring"></div>
-            <div class="loader-ring"></div>
-            <div class="loader-ring"></div>
+            <div class="loader-circle"></div>
             <span class="loader-text">Loading...</span>
         </div>
     </div>
+
+    <!-- 1. Scroll Progress Bar -->
+    <div class="progress-bar"></div>
+
+    <!-- 2. Custom Cursor -->
+    <div class="cursor-outer"></div>
+    <div class="cursor-inner"></div>
     
     <div id="canvas-container"></div>
 
@@ -74,11 +80,15 @@
                         <a href="#portfolio" class="btn-outline">View Projects</a>
                     </div>
                 </div>
-                
+
                 <div class="about-content">
                     <h3 class="about-subtitle"><span id="typed-about"></span></h3>
                     <p class="about-text">
-                        I am an enthusiastic <span class="highlight">Full Stack Developer</span> with a solid foundation in the <span class="highlight">Java Ecosystem</span>. I enjoy building functional and user-friendly web applications by combining modern frontend designs with robust backend logic. As a quick learner with a passion for problem-solving, I am eager to apply my academic knowledge to real-world projects and contribute to innovative software solutions.
+                        I am an enthusiastic <span class="highlight">Full Stack Developer</span> with a solid foundation
+                        in the <span class="highlight">Java Ecosystem</span>. I enjoy building functional and
+                        user-friendly web applications by combining modern frontend designs with robust backend logic.
+                        As a quick learner with a passion for problem-solving, I am eager to apply my academic knowledge
+                        to real-world projects and contribute to innovative software solutions.
                     </p>
                 </div>
             </div>
@@ -114,7 +124,8 @@
                     <i class='bx bxs-cog'></i>
                 </div>
                 <h3>Java Backend</h3>
-                <p>Expertise in <span class="highlight">Java</span> and <span class="highlight">Springboot</span>. Building robust, scalable backend architectures and high-performance server logic.</p>
+                <p>Expertise in <span class="highlight">Java</span> and <span class="highlight">Springboot</span>.
+                    Building robust, scalable backend architectures and high-performance server logic.</p>
                 <a href="#portfolio" class="btn skill-btn">Show More</a>
             </div>
 
@@ -126,7 +137,9 @@
                     <i class='bx bxl-javascript'></i>
                 </div>
                 <h3>Frontend Core</h3>
-                <p>Developing responsive web pages with <span class="highlight">HTML5</span>, <span class="highlight">CSS3</span>, and <span class="highlight">JavaScript</span>. Focus on clean UI and seamless UX.</p>
+                <p>Developing responsive web pages with <span class="highlight">HTML5</span>, <span
+                        class="highlight">CSS3</span>, and <span class="highlight">JavaScript</span>. Focus on clean UI
+                    and seamless UX.</p>
                 <a href="#portfolio" class="btn skill-btn">Show More</a>
             </div>
 
@@ -137,7 +150,8 @@
                     <i class='bx bxl-nodejs'></i>
                 </div>
                 <h3>React & Node</h3>
-                <p>Implementing dynamic applications using <span class="highlight">ReactJS</span> for frontend and <span class="highlight">Node/Express</span> for modern web services.</p>
+                <p>Implementing dynamic applications using <span class="highlight">ReactJS</span> for frontend and <span
+                        class="highlight">Node/Express</span> for modern web services.</p>
                 <a href="#portfolio" class="btn skill-btn">Show More</a>
             </div>
 
@@ -148,7 +162,8 @@
                     <i class='bx bxl-mongodb'></i>
                 </div>
                 <h3>Databases</h3>
-                <p>Proficient in <span class="highlight">MySQL</span> and <span class="highlight">MongoDB Atlas</span>. Designing efficient schemas and managing real-time data flow.</p>
+                <p>Proficient in <span class="highlight">MySQL</span> and <span class="highlight">MongoDB Atlas</span>.
+                    Designing efficient schemas and managing real-time data flow.</p>
                 <a href="#portfolio" class="btn skill-btn">Show More</a>
             </div>
 
@@ -159,7 +174,9 @@
                     <i class='bx bxl-visual-studio'></i>
                 </div>
                 <h3>Dev Tools</h3>
-                <p>Using <span class="highlight">Git</span>, <span class="highlight">Terminal</span>, and <span class="highlight">VS Code</span>. Experienced in managing project packages with <span class="highlight">npm</span> and <span class="highlight">webpack</span>.</p>
+                <p>Using <span class="highlight">Git</span>, <span class="highlight">Terminal</span>, and <span
+                        class="highlight">VS Code</span>. Experienced in managing project packages with <span
+                        class="highlight">npm</span> and <span class="highlight">webpack</span>.</p>
                 <a href="#portfolio" class="btn skill-btn">Show More</a>
             </div>
 
@@ -170,7 +187,9 @@
                     <i class='bx bx-time'></i>
                 </div>
                 <h3>Professional</h3>
-                <p>Strong focus on <span class="highlight">Problem Solving</span>, <span class="highlight">Time Management</span>, and <span class="highlight">Collaborative Communication</span> to meet goals.</p>
+                <p>Strong focus on <span class="highlight">Problem Solving</span>, <span class="highlight">Time
+                        Management</span>, and <span class="highlight">Collaborative Communication</span> to meet goals.
+                </p>
                 <a href="#portfolio" class="btn skill-btn">Show More</a>
             </div>
         </div>
@@ -182,41 +201,49 @@
         <div class="portfolio-container">
             <!-- Project 1: Chatbot-Using-Langchain -->
             <div class="portfolio-box glass-card">
-                <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=600&auto=format&fit=crop" alt="Chatbot Project" />
+                <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=600&auto=format&fit=crop"
+                    alt="Chatbot Project" />
                 <div class="portfolio-layer">
                     <div class="project-info">
                         <h4>Chatbot-Using-Langchain</h4>
-                        <p>Intelligent agent powered by <span class="highlight">LangChain</span> and <span class="highlight">LLMs</span>.</p>
+                        <p>Intelligent agent powered by <span class="highlight">LangChain</span> and <span
+                                class="highlight">LLMs</span>.</p>
                         <div class="project-tags">
                             <span>Python</span> <span>LangChain</span> <span>AI</span>
                         </div>
                     </div>
-                    <a href="https://chatbot-using-langchaingit-zemmrtasbahcwi59wfhdvp.streamlit.app/" target="_blank"><i class='bx bx-link-external'></i></a>
+                    <a href="https://chatbot-using-langchaingit-zemmrtasbahcwi59wfhdvp.streamlit.app/"
+                        target="_blank"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
 
             <!-- Project 2: Library Management System -->
             <div class="portfolio-box glass-card">
-                <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=600&auto=format&fit=crop" alt="Library Project" />
+                <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=600&auto=format&fit=crop"
+                    alt="Library Project" />
                 <div class="portfolio-layer">
                     <div class="project-info">
                         <h4>Library Management</h4>
-                        <p>Comprehensive platform for <span class="highlight">Resource Tracking</span> and <span class="highlight">Book Management</span>.</p>
+                        <p>Comprehensive platform for <span class="highlight">Resource Tracking</span> and <span
+                                class="highlight">Book Management</span>.</p>
                         <div class="project-tags">
                             <span>MERN</span> <span>Vercel</span> <span>Admin</span>
                         </div>
                     </div>
-                    <a href="https://library-management-system-major-pro.vercel.app/" target="_blank"><i class='bx bx-link-external'></i></a>
+                    <a href="https://library-management-system-major-pro.vercel.app/" target="_blank"><i
+                            class='bx bx-link-external'></i></a>
                 </div>
             </div>
 
             <!-- Project 3: P2P-File-Sharing-On-Local-Network -->
             <div class="portfolio-box glass-card">
-                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&auto=format&fit=crop" alt="Networking Project" />
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&auto=format&fit=crop"
+                    alt="Networking Project" />
                 <div class="portfolio-layer">
                     <div class="project-info">
                         <h4>P2P File Sharing</h4>
-                        <p>Secure peer-to-peer <span class="highlight">Data Transfer</span> system for local networks.</p>
+                        <p>Secure peer-to-peer <span class="highlight">Data Transfer</span> system for local networks.
+                        </p>
                         <div class="project-tags">
                             <span>Java</span> <span>Networking</span> <span>Sockets</span>
                         </div>
@@ -227,70 +254,112 @@
 
             <!-- Project 4: Hospital mgt system -->
             <div class="portfolio-box glass-card">
-                <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&auto=format&fit=crop" alt="Hospital Project" />
+                <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&auto=format&fit=crop"
+                    alt="Hospital Project" />
                 <div class="portfolio-layer">
                     <div class="project-info">
                         <h4>Hospital Management</h4>
-                        <p>Complete <span class="highlight">Healthcare Solution</span> for appointments and patient records.</p>
+                        <p>Complete <span class="highlight">Healthcare Solution</span> for appointments and patient
+                            records.</p>
                         <div class="project-tags">
                             <span>Full Stack</span> <span>Medical</span> <span>UI/UX</span>
                         </div>
                     </div>
-                    <a href="https://utkarshsrivastav09.github.io/Full-Stack_Hospital_Website/" target="_blank"><i class='bx bx-link-external'></i></a>
+                    <a href="https://utkarshsrivastav09.github.io/Full-Stack_Hospital_Website/" target="_blank"><i
+                            class='bx bx-link-external'></i></a>
                 </div>
             </div>
 
             <!-- Project 5: Tour & Tourism website -->
             <div class="portfolio-box glass-card">
-                <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600&auto=format&fit=crop" alt="Tourism Project" />
+                <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600&auto=format&fit=crop"
+                    alt="Tourism Project" />
                 <div class="portfolio-layer">
                     <div class="project-info">
                         <h4>Tour & Tourism</h4>
-                        <p>Beautifully designed platform for <span class="highlight">Global Exploration</span> and travel booking.</p>
+                        <p>Beautifully designed platform for <span class="highlight">Global Exploration</span> and
+                            travel booking.</p>
                         <div class="project-tags">
                             <span>Frontend</span> <span>Travel</span> <span>UI/UX</span>
                         </div>
                     </div>
-                    <a href="https://utkarshsrivastav09.github.io/Tour_And_Tourism_Website/" target="_blank"><i class='bx bx-link-external'></i></a>
+                    <a href="https://utkarshsrivastav09.github.io/Tour_And_Tourism_Website/" target="_blank"><i
+                            class='bx bx-link-external'></i></a>
                 </div>
             </div>
 
             <!-- Project 6: Online Food Delivery website -->
             <div class="portfolio-box glass-card">
-                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&auto=format&fit=crop" alt="Food Delivery Project" />
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&auto=format&fit=crop"
+                    alt="Food Delivery Project" />
                 <div class="portfolio-layer">
                     <div class="project-info">
                         <h4>Online Food Ordering</h4>
-                        <p>A delicious and interactive platform for <span class="highlight">Food Ordering</span> and discovery.</p>
+                        <p>A delicious and interactive platform for <span class="highlight">Food Ordering</span> and
+                            discovery.</p>
                         <div class="project-tags">
                             <span>Frontend</span> <span>E-commerce</span> <span>UI/UX</span>
                         </div>
                     </div>
-                    <a href="https://utkarshsrivastav09.github.io/Cafe-Online-Food-Website/" target="_blank"><i class='bx bx-link-external'></i></a>
+                    <a href="https://utkarshsrivastav09.github.io/Cafe-Online-Food-Website/" target="_blank"><i
+                            class='bx bx-link-external'></i></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- TESTIMONIAL / CERTIFICATIONS SECTION -->
+    <!-- CERTIFICATIONS SECTION -->
     <section class="testimonial" id="testimonial">
-        <h2 class="heading">Expertise <span>& Certifications</span></h2>
+        <h2 class="heading">Industry <span>Certifications</span></h2>
         <div class="testimonial-wrapper swiper myswiper">
             <div class="testimonial-content swiper-wrapper">
+                <!-- Oracle -->
                 <div class="testimonial-slide swiper-slide glass-card">
-                    <i class='bx bxl-oracle' style="font-size: 5rem; color: #f80000; margin-bottom: 2rem;"></i>
+                    <img src="Oracle_Asso.jpg" alt="Oracle Associate" />
                     <h3>Oracle</h3>
-                    <p>Certified Foundations Associate, demonstrating strong expertise in <span class="highlight">Database Management</span> and SQL.</p>
+                    <p>Foundations Associate</p>
                 </div>
+                <!-- Walmart -->
                 <div class="testimonial-slide swiper-slide glass-card">
-                    <i class='bx bxs-shopping-bag' style="font-size: 5rem; color: #0071ce; margin-bottom: 2rem;"></i>
-                    <h3>Walmart Global Tech</h3>
-                    <p>Recognized for technical proficiency in <span class="highlight">Software Engineering</span> and scalable systems.</p>
+                    <img src="Walmart.PNG" alt="Walmart Global Tech" />
+                    <h3>Walmart</h3>
+                    <p>Global Tech Virtual Experience</p>
                 </div>
+                <!-- JP Morgan -->
                 <div class="testimonial-slide swiper-slide glass-card">
-                    <i class='bx bxl-java' style="font-size: 5rem; color: #5382a1; margin-bottom: 2rem;"></i>
-                    <h3>Java Specialist</h3>
-                    <p>Deep knowledge in <span class="highlight">OOPS</span>, Data Structures, and building robust server-side logic.</p>
+                    <img src="JP Morgan.PNG" alt="JP Morgan" />
+                    <h3>JP Morgan</h3>
+                    <p>Software Engineering Virtual Experience</p>
+                </div>
+                <!-- Infosys AI -->
+                <div class="testimonial-slide swiper-slide glass-card">
+                    <img src="Artificial Intelligence - Infosys Springboard.jpg" alt="Infosys AI" />
+                    <h3>Infosys</h3>
+                    <p>Artificial Intelligence Foundations</p>
+                </div>
+                <!-- McKinsey -->
+                <div class="testimonial-slide swiper-slide glass-card">
+                    <img src="McKinsey.orgForward20251210 Certificate_page-0001.jpg" alt="McKinsey" />
+                    <h3>McKinsey & Co.</h3>
+                    <p>Forward Program Certification</p>
+                </div>
+                <!-- Tata -->
+                <div class="testimonial-slide swiper-slide glass-card">
+                    <img src="Tata Certificate.jfif" alt="Tata" />
+                    <h3>Tata</h3>
+                    <p>Technical Intern Certification</p>
+                </div>
+                <!-- TCS iON -->
+                <div class="testimonial-slide swiper-slide glass-card">
+                    <img src="TCS iON - Young.jpg" alt="TCS iON" />
+                    <h3>TCS iON</h3>
+                    <p>Young Professional Program</p>
+                </div>
+                <!-- Unstop -->
+                <div class="testimonial-slide swiper-slide glass-card">
+                    <img src="SkyHack Unstop Certificate.jpg" alt="Unstop" />
+                    <h3>Unstop</h3>
+                    <p>SkyHack Participant</p>
                 </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -300,8 +369,8 @@
     <!-- CONTACT SECTION -->
     <section class="contact" id="contact">
         <h2 class="heading">Get In <span>Touch</span></h2>
-        <div class="contact-container">
-            <div class="contact-info glass-card">
+        <div class="contact-container glass-card">
+            <div class="contact-info">
                 <div class="info-item">
                     <i class='bx bxs-envelope'></i>
                     <div class="info-text">
@@ -325,22 +394,32 @@
                 </div>
                 <div class="social-links">
                     <a href="https://github.com/UtkarshSrivastav09" target="_blank"><i class='bx bxl-github'></i></a>
-                    <a href="https://www.linkedin.com/in/utkarsh-srivastav-a1b32b22a/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.linkedin.com/in/utkarsh-srivastav-a1b32b22a/" target="_blank"><i
+                            class='bx bxl-linkedin'></i></a>
                     <a href="#" target="_blank"><i class='bx bxl-instagram'></i></a>
                 </div>
             </div>
 
-            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form glass-card">
-                <input type="hidden" name="access_key" value="699d7580-0a82-4113-911e-76e336214156">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                <input type="hidden" name="access_key" value="3df8df0c-44c8-44f4-80aa-610ca8ac49d1">
+                <input type="hidden" name="from_name" value="Portfolio Contact Form">
+                
                 <div class="input-group">
-                    <input type="text" name="name" placeholder="Full Name" required>
-                    <input type="email" name="email" placeholder="Email Address" required>
+                    <input type="text" name="First Name" placeholder="First Name" required>
+                    <input type="text" name="Last Name" placeholder="Last Name" required>
                 </div>
+
                 <div class="input-group">
-                    <input type="number" name="phone" placeholder="Mobile Number">
-                    <input type="text" name="subject" placeholder="Email Subject">
+                    <input type="email" name="Email Address" placeholder="Email Address" required>
+                    <input type="text" name="Phone Number" placeholder="Mobile Number">
                 </div>
-                <textarea name="message" cols="30" rows="8" placeholder="Your Message" required></textarea>
+
+                <div class="input-group">
+                    <input type="text" name="Subject" placeholder="Email Subject">
+                </div>
+
+                <textarea name="Message" cols="30" rows="8" placeholder="Your Message" required></textarea>
+
                 <button type="submit" class="btn">Send Message</button>
             </form>
         </div>
@@ -349,7 +428,10 @@
     <!-- FOOTER -->
     <footer class="footer">
         <div class="footer-text">
-            <p>Copyright &copy; 2024 by Utkarsh | All Rights Reserved.</p>
+            <p>Copyright &copy; <span id="current-year"></span> by Utkarsh | All Rights Reserved.</p>
+        </div>
+        <div class="footer-greeting">
+            <p>Thanks for visiting! Have a great day! ✨</p>
         </div>
         <div class="footer-iconTop">
             <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
@@ -362,4 +444,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>

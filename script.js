@@ -117,19 +117,48 @@ const initInteractions = () => {
 
     // Swiper implementation
     const swiper = new Swiper(".myswiper", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        loop: true,
+        effect: "coverflow",
         grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        loop: true,
+        coverflowEffect: {
+            rotate: 15, // Reduced rotation for better mobile viewing
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+        },
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
         },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                coverflowEffect: {
+                    rotate: 0, // Flat on small phones
+                    depth: 50,
+                }
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 3,
+            }
         },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        }
     });
+
+    // Dynamic Copyright Year
+    const yearSpan = document.querySelector('#current-year');
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
 };
 
 // --- Initialization ---
