@@ -807,7 +807,7 @@ section {
     gap: 1.5rem;
     padding: 3rem !important; /* Slightly less padding for more content room */
     background: rgba(0, 0, 0, 0.2);
-    width: 140%; /* Resetting to 100% to match footer alignment */
+    width: 140%; 
 }
 
 .input-group {
